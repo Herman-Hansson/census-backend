@@ -50,43 +50,43 @@ Adds a new participant. Requires a JSON body with:
   "lastname": "Mercury",
   "dob": "1946-09-05",
   "work": {
-    "companyname": "Queen",
-    "salary": 100000,
+    "companyname": "Queen Records",
+    "salary": 150000,
     "currency": "GBP"
   },
   "home": {
     "country": "UK",
-    "city": "London"
+    "city": "Zanzibar"
   }
 }
 
 ```
-**GET** https://census-backend-vdhz.onrender.com/participants
+**GET** https://census-backend-vdhz.onrender.com/participants  
 Returns all participants.
 
-**GET** https://census-backend-vdhz.onrender.com/participants/details
+**GET** https://census-backend-vdhz.onrender.com/participants/details  
 Returns only the firstname, lastname, and email of all participants.
 
-**GET** https://census-backend-vdhz.onrender.com/participants/details/:email
-Example: https://census-backend-vdhz.onrender.com/participants/details/freddie.mercury@queen.com
+**GET** https://census-backend-vdhz.onrender.com/participants/details/:email  
+Example: https://census-backend-vdhz.onrender.com/participants/details/freddie.mercury@queen.com  
 Returns the details of a specific participant by email.
 
-**GET** https://census-backend-vdhz.onrender.com/participants/work/:email
-Examle: https://census-backend-vdhz.onrender.com/participants/work/freddie.mercury@queen.com
+**GET** https://census-backend-vdhz.onrender.com/participants/work/:email  
+Examle: https://census-backend-vdhz.onrender.com/participants/work/freddie.mercury@queen.com  
 Returns work details for a participant.
 
-**GET** https://census-backend-vdhz.onrender.com/participants/home/:email
-Example: https://census-backend-vdhz.onrender.com/participants/home/freddie.mercury@queen.com
-Returns home details for a participant.
+**GET** https://census-backend-vdhz.onrender.com/participants/home/:email  
+Example: https://census-backend-vdhz.onrender.com/participants/home/freddie.mercury@queen.com  
+Returns home details for a participant.  
 
-**PUT** https://census-backend-vdhz.onrender.com/participants/:email
-Example: https://census-backend-vdhz.onrender.com/participants/freddie.mercury@queen.com
-Updates a participant’s full data.
-Requires a full JSON body in the same format as used in the POST endpoint.
+**PUT** https://census-backend-vdhz.onrender.com/participants/:email  
+Example: https://census-backend-vdhz.onrender.com/participants/freddie.mercury@queen.com  
+Updates a participant’s full data.  
+Requires a full JSON body in the same format as used in the POST endpoint.  
 
-**DELETE** https://census-backend-vdhz.onrender.com/participants/:email
-Example: freddie.mercury@queen.com
-Deletes a participant by their email.
+**DELETE** https://census-backend-vdhz.onrender.com/participants/:email  
+Example: https://census-backend-vdhz.onrender.com/participants/freddie.mercury@queen.com  
+Deletes a participant by their email.  
 
 ## ✅ Input Validation
 
